@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xuyu.myview.MainActivity">
+
+    <Button
+        android:id="@+id/button_automatic_ball"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="自动弹的球"/>
+    <Button
+        android:id="@+id/button_circle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="摩天轮效果"/>
+    <Button
+        android:id="@+id/button_identifying_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="验证码"/>
+</LinearLayout>
