@@ -4,6 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="20dp"
     tools:context="com.xuyu.myview.identifying_code.ThirdActivity">
+    <com.xuyu.myview.identifying_code.IdentifyingCodeView
+        android:layout_width="200dp"
+        android:layout_height="50dp"/>
 
 </LinearLayout>

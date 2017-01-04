@@ -5,10 +5,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.xuyu.myview.automaticball.AutomaticBallView;
 import com.xuyu.myview.automaticball.FirstActivity;
 import com.xuyu.myview.identifying_code.ThirdActivity;
-import com.xuyu.myview.skywheel.SecondActivity;
+import com.xuyu.myview.wheel.SecondActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener
 {

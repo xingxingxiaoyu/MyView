@@ -1,4 +1,4 @@
-package com.xuyu.myview.skywheel;
+package com.xuyu.myview.wheel;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
