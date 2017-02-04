@@ -35,7 +35,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         {
             case R.id.button_automatic_ball:
                 intent.setClass(this, FirstActivity.class);
-
                 break;
             case R.id.button_circle:
                 intent.setClass(this, SecondActivity.class);
