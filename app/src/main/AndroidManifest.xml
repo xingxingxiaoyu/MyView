@@ -21,6 +21,8 @@
         </activity>
         <activity android:name=".identifying_code.ThirdActivity">
         </activity>
+        <activity android:name=".SideSlipe.FourthActivity">
+        </activity>
     </application>
 
 </manifest>
