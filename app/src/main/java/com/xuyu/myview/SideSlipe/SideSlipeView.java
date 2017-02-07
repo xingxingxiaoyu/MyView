@@ -14,7 +14,6 @@ public class SideSlipeView extends ScrollView
     public SideSlipeView(Context context, AttributeSet attrs)
     {
         super(context, attrs);
-
     }
 
     @Override

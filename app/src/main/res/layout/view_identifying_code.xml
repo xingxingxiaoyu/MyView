@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/view_edit_code"
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              android:background="#605F87"
+              android:gravity="center"
+              android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/et_code"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="13dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:hint="请输入验证码"
+        android:inputType="number"
+        android:maxLength="6"
+        android:padding="13dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="14sp"/>
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:background="#BEBBD0">
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:id="@+id/tv_get_code"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="获取验证码"
+            android:textColor="#6A4FF6"/>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/layout_time"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="#EB4472"
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="60"/>
+
+            <TextView
+                android:textColor="#FFFFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="s"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
