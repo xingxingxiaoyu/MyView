@@ -1,5 +1,6 @@
 package com.xuyu.myview.SideSlipe;
 
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -13,6 +14,5 @@ public class FourthActivity extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fourth);
-
     }
 }

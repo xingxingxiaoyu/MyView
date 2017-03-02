@@ -5,9 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.xuyu.myview.SideSlipe.FourthActivity">
-    <com.xuyu.myview.SideSlipe.SideSlipeView
+    <com.xuyu.myview.SideSlipe.SideMenuLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    </com.xuyu.myview.SideSlipe.SideSlipeView>
+        android:layout_height="match_parent"
+        android:background="#006666">
+        <!--can't change-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--can't change-->
+            <include layout="@layout/layout_side_menu"/>
+            <!--can't change-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/img_0667">
+            </FrameLayout>
+        </LinearLayout>
+    </com.xuyu.myview.SideSlipe.SideMenuLayout>
 
 </RelativeLayout>

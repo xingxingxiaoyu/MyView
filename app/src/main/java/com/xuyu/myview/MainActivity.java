@@ -1,10 +1,14 @@
 package com.xuyu.myview;
 
+import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 
+import com.xuyu.myview.SideSlipe.FourthActivity;
 import com.xuyu.myview.automaticball.FirstActivity;
 import com.xuyu.myview.identifying_code.ThirdActivity;
 import com.xuyu.myview.wheel.SecondActivity;
@@ -25,6 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.button_automatic_ball).setOnClickListener(this);
         findViewById(R.id.button_circle).setOnClickListener(this);
         findViewById(R.id.button_identifying_code).setOnClickListener(this);
+        findViewById(R.id.button_side_menu).setOnClickListener(this);
     }
 
     @Override
@@ -41,6 +46,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.button_identifying_code:
                 intent.setClass(this, ThirdActivity.class);
+                break;
+            case R.id.button_side_menu:
+                intent.setClass(this, FourthActivity.class);
                 break;
         }
         startActivity(intent);
