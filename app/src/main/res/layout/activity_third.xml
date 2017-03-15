@@ -4,14 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="20dp"
     android:orientation="vertical"
+    android:padding="20dp"
     tools:context="com.xuyu.myview.identifying_code.ThirdActivity">
+
     <com.xuyu.myview.identifying_code.IdentifyingCodeView
         android:layout_width="200dp"
         android:layout_height="50dp"/>
+
     <com.xuyu.myview.identifying_code.IdentifyingCodeLayout
+        android:id="@+id/icl"
         android:layout_width="match_parent"
         android:layout_height="50dp"/>
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:src="@color/colorAccent"/>
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"/>
 
 </LinearLayout>

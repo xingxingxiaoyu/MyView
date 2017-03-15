@@ -1,5 +1,6 @@
 package com.xuyu.myview;
 
+import android.animation.Animator;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
