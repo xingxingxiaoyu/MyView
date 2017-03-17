@@ -23,6 +23,8 @@
         </activity>
         <activity android:name=".SideSlipe.FourthActivity">
         </activity>
+        <activity android:name=".animator_view.FifthActivity">
+        </activity>
     </application>
 
 </manifest>
