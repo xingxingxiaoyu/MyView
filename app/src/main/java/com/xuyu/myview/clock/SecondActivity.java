@@ -1,4 +1,4 @@
-package com.xuyu.myview.wheel;
+package com.xuyu.myview.clock;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

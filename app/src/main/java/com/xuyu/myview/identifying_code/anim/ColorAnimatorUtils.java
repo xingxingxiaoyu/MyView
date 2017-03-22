@@ -1,12 +1,8 @@
-package com.xuyu.myview.anim;
+package com.xuyu.myview.identifying_code.anim;
 
-import android.animation.Animator;
 import android.animation.ValueAnimator;
-import android.os.Bundle;
 import android.view.View;
-import android.widget.ViewAnimator;
 
-import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 

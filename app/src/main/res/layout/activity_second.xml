@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.xuyu.myview.wheel.SecondActivity">
-    <com.xuyu.myview.wheel.WheelView
+    tools:context="com.xuyu.myview.clock.SecondActivity">
+    <com.xuyu.myview.clock.WheelView
         android:layout_width="100dp"
         android:layout_height="100dp"/>
 

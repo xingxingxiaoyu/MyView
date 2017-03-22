@@ -1,16 +1,14 @@
 package com.xuyu.myview.identifying_code;
 
-import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 
 import com.xuyu.myview.R;
-import com.xuyu.myview.anim.ColorAnimatorUtils;
+import com.xuyu.myview.identifying_code.anim.ColorAnimatorUtils;
 
 public class ThirdActivity extends AppCompatActivity
 {
