@@ -25,6 +25,8 @@
         </activity>
         <activity android:name=".animator_view.FifthActivity">
         </activity>
+        <activity android:name=".ferris_wheel.SixthActivity">
+        </activity>
     </application>
 
 </manifest>

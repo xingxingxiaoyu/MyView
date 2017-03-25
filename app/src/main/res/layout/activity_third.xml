@@ -12,11 +12,6 @@
         android:layout_width="200dp"
         android:layout_height="50dp"/>
 
-    <com.xuyu.myview.identifying_code.IdentifyingCodeLayout
-        android:id="@+id/icl"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"/>
-
     <ImageView
         android:id="@+id/image1"
         android:layout_width="50dp"

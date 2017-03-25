@@ -187,60 +187,68 @@ public class ClockView extends View
         //画圆点
         canvas.drawCircle(0, 0, 3, mPaintPoint);
     }
+    private Thread thread;
 
     public void start()
     {
         isRunning = true;
-        new Thread(new Runnable()
+        thread = new Thread(new Runnable()
         {
             @Override
             public void run()
             {
-                while (isRunning)
+                postMessage();
+            }
+        });
+        thread.start();
+    }
+
+    private synchronized void postMessage()
+    {
+        while (isRunning)
+        {
+            try
+            {
+                Thread.sleep(1000);
+                second++;
+                if (second == 60)
                 {
-                    try
+                    second = 0;
+                    minute++;
+                    if (minute == 60)
                     {
-                        Thread.sleep(1000);
-                        second++;
-                        if (second == 60)
+                        minute = 0;
+                        hour++;
+                        if (hour == 12)
                         {
-                            second = 0;
-                            minute++;
-                            if (minute == 60)
-                            {
-                                minute = 0;
-                                hour++;
-                                if (hour == 12)
-                                {
-                                    hour = 0;
-                                }
-                            }
+                            hour = 0;
                         }
-                        if (mOnTimeChangeListener != null)
-                        {
-                            mHandler.post(new Runnable()
-                            {
-                                @Override
-                                public void run()
-                                {
-                                    mOnTimeChangeListener.onTimeChange(hour, minute, second);
-                                }
-                            });
-                        }
-                        postInvalidate();
-                    } catch (InterruptedException e)
-                    {
-                        e.printStackTrace();
                     }
                 }
+                if (mOnTimeChangeListener != null)
+                {
+                    mHandler.post(new Runnable()
+                    {
+                        @Override
+                        public void run()
+                        {
+                            mOnTimeChangeListener.onTimeChange(hour, minute, second);
+                        }
+                    });
+                }
+                postInvalidate();
+            } catch (InterruptedException e)
+            {
+                e.printStackTrace();
             }
-        }).start();
+        }
     }
 
     private Handler mHandler=new Handler();
     public void stop()
     {
         isRunning = false;
+        thread=null;
     }
 
     public void setHour(int hour)
