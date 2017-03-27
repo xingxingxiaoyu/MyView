@@ -3,8 +3,4 @@
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
-    <com.xuyu.myview.bezier_curve.BezierCurveLine
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
-
 </LinearLayout>
