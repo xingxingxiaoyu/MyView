@@ -136,13 +136,23 @@ public class FerrisWheelLayout extends ViewGroup
         }
         canvas.translate(-centerX, -centerY);
     }
+    private float startX;
+    private float startY;
 
     @Override
     public boolean onTouchEvent(MotionEvent event)
     {
         switch (event.getAction())
         {
-//            case MotionEvent
+            case MotionEvent.ACTION_DOWN:
+                startX = event.getX();
+                startY = event.getY();
+                break;
+            case MotionEvent.ACTION_MOVE:
+
+                break;
+            case MotionEvent.ACTION_UP:
+                break;
         }
         return super.onTouchEvent(event);
     }

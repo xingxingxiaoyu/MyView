@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.xuyu.myview.SideSlipe.FourthActivity">
-    <com.xuyu.myview.SideSlipe.SideMenuLayout
+    tools:context="com.xuyu.myview.side_slipe.FourthActivity">
+    <com.xuyu.myview.side_slipe.SideMenuLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#006666">
@@ -23,6 +23,6 @@
                 android:background="@mipmap/img_0667">
             </FrameLayout>
         </LinearLayout>
-    </com.xuyu.myview.SideSlipe.SideMenuLayout>
+    </com.xuyu.myview.side_slipe.SideMenuLayout>
 
 </RelativeLayout>

@@ -1,6 +1,5 @@
-package com.xuyu.myview.SideSlipe;
+package com.xuyu.myview.side_slipe;
 
-import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 

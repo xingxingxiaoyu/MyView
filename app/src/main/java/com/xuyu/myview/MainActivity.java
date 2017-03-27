@@ -5,9 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.xuyu.myview.SideSlipe.FourthActivity;
+import com.xuyu.myview.side_slipe.FourthActivity;
 import com.xuyu.myview.animator_view.FifthActivity;
 import com.xuyu.myview.automaticball.FirstActivity;
+import com.xuyu.myview.bezier_curve.SeventhActivity;
 import com.xuyu.myview.ferris_wheel.SixthActivity;
 import com.xuyu.myview.identifying_code.ThirdActivity;
 import com.xuyu.myview.clock.SecondActivity;
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.button_side_menu).setOnClickListener(this);
         findViewById(R.id.button_animator).setOnClickListener(this);
         findViewById(R.id.button_ferris_wheel).setOnClickListener(this);
+        findViewById(R.id.button_bezier_curver).setOnClickListener(this);
     }
 
     @Override
@@ -56,6 +58,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.button_ferris_wheel:
                 intent.setClass(this, SixthActivity.class);
+                break;
+            case R.id.button_bezier_curver:
+                intent.setClass(this, SeventhActivity.class);
                 break;
         }
         startActivity(intent);

@@ -21,11 +21,13 @@
         </activity>
         <activity android:name=".identifying_code.ThirdActivity">
         </activity>
-        <activity android:name=".SideSlipe.FourthActivity">
+        <activity android:name=".side_slipe.FourthActivity">
         </activity>
         <activity android:name=".animator_view.FifthActivity">
         </activity>
         <activity android:name=".ferris_wheel.SixthActivity">
+        </activity>
+        <activity android:name=".bezier_curve.SeventhActivity">
         </activity>
     </application>
 

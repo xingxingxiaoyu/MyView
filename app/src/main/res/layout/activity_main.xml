@@ -37,4 +37,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="摩天轮"/>
+    <Button
+        android:id="@+id/button_bezier_curver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="贝塞尔曲线"/>
 </LinearLayout>

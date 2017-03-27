@@ -1,19 +1,14 @@
-package com.xuyu.myview.SideSlipe;
+package com.xuyu.myview.side_slipe;
 
-import android.app.Activity;
 import android.content.Context;
-import android.graphics.Canvas;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
-import android.util.Log;
 import android.view.Display;
 import android.view.MotionEvent;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
 import android.widget.HorizontalScrollView;
 import android.widget.LinearLayout;
-import android.widget.ScrollView;
-import android.widget.Toast;
 
 /**
  * Created by Xuyu on 2017/2/4.
