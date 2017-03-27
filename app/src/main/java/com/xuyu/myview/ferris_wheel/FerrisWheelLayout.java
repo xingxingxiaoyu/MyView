@@ -9,6 +9,8 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
+import android.widget.ScrollView;
 import android.widget.Toast;
 
 /**
@@ -90,11 +92,11 @@ public class FerrisWheelLayout extends ViewGroup
     @Override
     protected void onLayout(boolean changed, int l, int t, int r, int b)
     {
-        Log.e(TAG, "l" + l + " t" + t + " r" + r + " b" + b);
+//        Log.e(TAG, "l" + l + " t" + t + " r" + r + " b" + b);
         centerX = (r - l) / 2;
         centerY = (b - t) / 2;
         radius = Math.min((r - l) / 2, (b - t) / 2) - 30;
-        Log.e(TAG, "centerX:" + centerX + "centerY:" + centerY + "radius:" + radius);
+//        Log.e(TAG, "centerX:" + centerX + "centerY:" + centerY + "radius:" + radius);
         int childCount = getChildCount();
         for (int i = 0; i < childCount; i++)
         {
@@ -116,10 +118,10 @@ public class FerrisWheelLayout extends ViewGroup
                     Toast.makeText(FerrisWheelLayout.this.getContext(), "这是第" + index + "张图片", Toast.LENGTH_SHORT).show();
                 }
             });
-            Log.e(TAG, i + " left:" + (centerX + (int) (radius * Math.cos((Math.PI * 2) / childCount * i + angle)) - childWidth / 2) +
-                    " top:" + (centerY + (int) (radius * Math.sin((Math.PI * 2) / childCount * i + angle)) - childHeight / 2) +
-                    " right:" + (centerX + (int) (radius * Math.cos((Math.PI * 2) / childCount * i + angle)) + childWidth / 2) +
-                    " bottom:" + (centerY + (int) (radius * Math.sin((Math.PI * 2) / childCount * i + angle)) + childWidth / 2));
+//            Log.e(TAG, i + " left:" + (centerX + (int) (radius * Math.cos((Math.PI * 2) / childCount * i + angle)) - childWidth / 2) +
+//                    " top:" + (centerY + (int) (radius * Math.sin((Math.PI * 2) / childCount * i + angle)) - childHeight / 2) +
+//                    " right:" + (centerX + (int) (radius * Math.cos((Math.PI * 2) / childCount * i + angle)) + childWidth / 2) +
+//                    " bottom:" + (centerY + (int) (radius * Math.sin((Math.PI * 2) / childCount * i + angle)) + childWidth / 2));
         }
     }
 
@@ -136,26 +138,49 @@ public class FerrisWheelLayout extends ViewGroup
         }
         canvas.translate(-centerX, -centerY);
     }
+
     private float startX;
     private float startY;
+    private float currentX;
+    private float currentY;
+    private float endX;
+    private float endY;
 
     @Override
     public boolean onTouchEvent(MotionEvent event)
     {
+        Log.e(TAG,"onTouchEvent");
         switch (event.getAction())
         {
             case MotionEvent.ACTION_DOWN:
+                Log.e(TAG,"onTouchEvent  ACTION_DOWN");
                 startX = event.getX();
                 startY = event.getY();
                 break;
             case MotionEvent.ACTION_MOVE:
-
+                Log.e(TAG,"onTouchEvent  ACTION_MOVE");
+                currentX = event.getX();
+                currentY = event.getY();
+                changeAngle(startX,startY,currentX,currentY);
+//                postInvalidate();
+                requestLayout();
+                startX=currentX;
+                startY=currentY;
                 break;
             case MotionEvent.ACTION_UP:
+                Log.e(TAG,"onTouchEvent  ACTION_UP");
+                endX = event.getX();
+                endY = event.getY();
                 break;
         }
-        return super.onTouchEvent(event);
+        return true;
     }
+
+    private void changeAngle(float startX, float startY, float currentX, float currentY)
+    {
+        angle+=Math.atan2(currentY-centerY,currentX-centerX)-Math.atan2(startY-centerY,startX-centerX);
+    }
+
 
     public int Dp2Px(Context context, float dp)
     {
