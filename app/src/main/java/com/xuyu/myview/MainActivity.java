@@ -33,13 +33,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.button_animator).setOnClickListener(this);
         findViewById(R.id.button_ferris_wheel).setOnClickListener(this);
         findViewById(R.id.button_bezier_curver).setOnClickListener(this);
+        findViewById(R.id.button_pay_password).setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v)
     {
         Intent intent = new Intent();
-        switch(v.getId())
+        switch (v.getId())
         {
             case R.id.button_automatic_ball:
                 intent.setClass(this, FirstActivity.class);
@@ -60,6 +61,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 intent.setClass(this, SixthActivity.class);
                 break;
             case R.id.button_bezier_curver:
+                intent.setClass(this, SeventhActivity.class);
+                break;
+            case R.id.button_pay_password:
                 intent.setClass(this, SeventhActivity.class);
                 break;
         }

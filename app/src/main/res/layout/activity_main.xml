@@ -42,4 +42,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="贝塞尔曲线"/>
+    <Button
+        android:id="@+id/button_pay_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="支付密码"/>
 </LinearLayout>
