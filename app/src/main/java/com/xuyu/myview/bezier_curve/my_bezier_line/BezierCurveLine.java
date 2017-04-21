@@ -1,4 +1,4 @@
-package com.xuyu.myview.bezier_curve;
+package com.xuyu.myview.bezier_curve.my_bezier_line;
 
 import android.content.Context;
 import android.graphics.Canvas;

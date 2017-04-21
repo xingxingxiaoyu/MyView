@@ -27,11 +27,15 @@
         </activity>
         <activity android:name=".ferris_wheel.SixthActivity">
         </activity>
-        <activity android:name=".bezier_curve.SeventhActivity">
+        <activity android:name=".bezier_curve.my_bezier_line.MyBezierActivity">
         </activity>
         <activity android:name=".pay_password.EighthActivity">
         </activity>
         <activity android:name=".list_view.NinthActivity">
+        </activity>
+        <activity android:name=".bezier_curve.SeventhActivity">
+        </activity>
+        <activity android:name=".bezier_curve.bezier_show.BezierShowActivity">
         </activity>
     </application>
 

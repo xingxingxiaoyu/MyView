@@ -1,29 +1,30 @@
-package com.xuyu.myview.bezier_curve;
+package com.xuyu.myview.bezier_curve.bezier_show;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
 import com.xuyu.myview.R;
-import com.xuyu.myview.bezier_curve.bezier_show.BezierShowActivity;
 
-public class SeventhActivity extends AppCompatActivity
+public class BezierShowActivity extends AppCompatActivity
 {
+
+    private BezierShowView mBezierShowView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_seventh);
+        setContentView(R.layout.activity_bezier_show);
+        mBezierShowView = (BezierShowView)findViewById(R.id.bezier_show_view);
     }
 
     public void onClick(View view)
     {
         switch (view.getId())
         {
-            case R.id.button1:
-                startActivity(new Intent(this, BezierShowActivity.class));
+            case R.id.button_start:
+                mBezierShowView.start();
                 break;
         }
     }

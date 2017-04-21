@@ -5,10 +5,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.xuyu.myview.bezier_curve.SeventhActivity;
+import com.xuyu.myview.pay_password.EighthActivity;
 import com.xuyu.myview.side_slipe.FourthActivity;
 import com.xuyu.myview.animator_view.FifthActivity;
 import com.xuyu.myview.automaticball.FirstActivity;
-import com.xuyu.myview.bezier_curve.SeventhActivity;
 import com.xuyu.myview.ferris_wheel.SixthActivity;
 import com.xuyu.myview.identifying_code.ThirdActivity;
 import com.xuyu.myview.clock.SecondActivity;
@@ -64,7 +65,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 intent.setClass(this, SeventhActivity.class);
                 break;
             case R.id.button_pay_password:
-                intent.setClass(this, SeventhActivity.class);
+                intent.setClass(this, EighthActivity.class);
                 break;
         }
         startActivity(intent);

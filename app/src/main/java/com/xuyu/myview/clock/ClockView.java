@@ -10,6 +10,7 @@ import android.os.Message;
 import android.support.annotation.MainThread;
 import android.support.annotation.UiThread;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 
 import com.xuyu.myview.R;
@@ -187,6 +188,7 @@ public class ClockView extends View
         //画圆点
         canvas.drawCircle(0, 0, 3, mPaintPoint);
     }
+
     private Thread thread;
 
     public void start()
@@ -244,11 +246,12 @@ public class ClockView extends View
         }
     }
 
-    private Handler mHandler=new Handler();
+    private Handler mHandler = new Handler();
+
     public void stop()
     {
         isRunning = false;
-        thread=null;
+        thread = null;
     }
 
     public void setHour(int hour)
