@@ -26,6 +26,9 @@ public class BezierShowActivity extends AppCompatActivity
             case R.id.button_start:
                 mBezierShowView.start();
                 break;
+            case R.id.button_start2:
+                mBezierShowView.start2();
+                break;
         }
     }
 }

@@ -37,6 +37,8 @@
         </activity>
         <activity android:name=".bezier_curve.bezier_show.BezierShowActivity">
         </activity>
+        <activity android:name=".bezier_curve.path.PathTestActivity">
+        </activity>
     </application>
 
 </manifest>

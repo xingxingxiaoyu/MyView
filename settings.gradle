@@ -1,1 +1,1 @@
-include ':app', ':coloranimationutil'
+include ':app'

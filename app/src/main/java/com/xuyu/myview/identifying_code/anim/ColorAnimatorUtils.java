@@ -79,7 +79,7 @@ public class ColorAnimatorUtils
     }
 
 
-    private int getProgressColor(int startColor, int endColor, float progress)
+    public int getProgressColor(int startColor, int endColor, float progress)
     {
         int red = getValue(startColor / 0xFFFF, endColor / 0xFFFF, progress);
         int green = getValue((startColor / 0xFF) % 0xFF, (endColor / 0xFF) % 0xFF, progress);

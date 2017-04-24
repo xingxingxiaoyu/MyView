@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_seventh"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.xuyu.myview.bezier_curve.SeventhActivity">
     <Button
         android:id="@+id/button1"
@@ -12,4 +13,16 @@
         android:text="贝塞尔曲线原理展示"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
-</RelativeLayout>
+    <Button
+        android:id="@+id/button2"
+        android:onClick="onClick"
+        android:text="自己写的贝塞尔曲线函数"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/button3"
+        android:onClick="onClick"
+        android:text="路径测试"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

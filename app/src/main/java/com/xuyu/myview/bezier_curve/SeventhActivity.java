@@ -7,6 +7,8 @@ import android.view.View;
 
 import com.xuyu.myview.R;
 import com.xuyu.myview.bezier_curve.bezier_show.BezierShowActivity;
+import com.xuyu.myview.bezier_curve.my_bezier_line.MyBezierActivity;
+import com.xuyu.myview.bezier_curve.path.PathTestActivity;
 
 public class SeventhActivity extends AppCompatActivity
 {
@@ -24,6 +26,12 @@ public class SeventhActivity extends AppCompatActivity
         {
             case R.id.button1:
                 startActivity(new Intent(this, BezierShowActivity.class));
+                break;
+            case R.id.button2:
+                startActivity(new Intent(this, MyBezierActivity.class));
+                break;
+            case R.id.button3:
+                startActivity(new Intent(this, PathTestActivity.class));
                 break;
         }
     }
