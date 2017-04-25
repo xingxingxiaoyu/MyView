@@ -159,7 +159,7 @@ public class BezierShowView extends View
     {
         curveList.clear();
         ValueAnimator valueAnimator = ValueAnimator.ofFloat(0F, 1F);
-        valueAnimator.setDuration(4000);
+        valueAnimator.setDuration(5000);
         valueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener()
         {
             @Override
@@ -177,7 +177,7 @@ public class BezierShowView extends View
     {
         curveList2.clear();
         ValueAnimator valueAnimator = ValueAnimator.ofFloat(0F, 1F);
-        valueAnimator.setDuration(4000);
+        valueAnimator.setDuration(5000);
         valueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener()
         {
             @Override
