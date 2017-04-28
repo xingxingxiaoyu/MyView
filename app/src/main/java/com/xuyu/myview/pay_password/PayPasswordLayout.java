@@ -6,6 +6,7 @@ import android.text.TextWatcher;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
@@ -86,6 +87,9 @@ public class PayPasswordLayout extends FrameLayout implements TextWatcher, View.
         if (length == 6)
         {
             password = string;
+            //隐藏键盘
+            InputMethodManager imm = (InputMethodManager) getContext().getSystemService(Context.INPUT_METHOD_SERVICE);
+            imm.toggleSoftInput(0, InputMethodManager.HIDE_NOT_ALWAYS);
         }
     }
 
@@ -118,7 +122,7 @@ public class PayPasswordLayout extends FrameLayout implements TextWatcher, View.
     @Override
     public void onClick(View v)
     {
-        if (password==null||password.length() != 6)
+        if (password == null || password.length() != 6)
         {
             Toast.makeText(this.getContext(), "请输入六位数密码", Toast.LENGTH_SHORT).show();
         }
