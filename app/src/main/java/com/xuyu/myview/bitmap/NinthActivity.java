@@ -1,4 +1,4 @@
-package com.xuyu.myview.list_view;
+package com.xuyu.myview.bitmap;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

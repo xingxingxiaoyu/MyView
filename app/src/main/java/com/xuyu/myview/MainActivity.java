@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.xuyu.myview.bezier_curve.SeventhActivity;
+import com.xuyu.myview.bitmap.NinthActivity;
 import com.xuyu.myview.pay_password.EighthActivity;
 import com.xuyu.myview.side_slipe.FourthActivity;
 import com.xuyu.myview.animator_view.FifthActivity;
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.button_ferris_wheel).setOnClickListener(this);
         findViewById(R.id.button_bezier_curver).setOnClickListener(this);
         findViewById(R.id.button_pay_password).setOnClickListener(this);
+        findViewById(R.id.button_bitmap).setOnClickListener(this);
     }
 
     @Override
@@ -66,6 +68,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.button_pay_password:
                 intent.setClass(this, EighthActivity.class);
+                break;
+            case R.id.button_bitmap:
+                intent.setClass(this, NinthActivity.class);
                 break;
         }
         startActivity(intent);
