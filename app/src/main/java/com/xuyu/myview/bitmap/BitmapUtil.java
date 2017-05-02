@@ -25,7 +25,6 @@ public class BitmapUtil
 
         // 设置饱和度
         matrix.setSaturation(saturation / 100F);
-//        matrix.set
 
         Paint paint = new Paint();
         paint.setColorFilter(new ColorMatrixColorFilter(matrix));

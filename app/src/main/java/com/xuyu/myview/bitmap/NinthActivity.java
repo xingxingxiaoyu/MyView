@@ -38,7 +38,8 @@ public class NinthActivity extends AppCompatActivity implements SeekBar.OnSeekBa
         mSeekBar_2.setOnSeekBarChangeListener(this);
         mSeekBar_3.setOnSeekBarChangeListener(this);
 
-        mSeekBar_1.setMax(100);
+        mSeekBar_1.setMax(200);
+        mSeekBar_1.setProgress(100);
     }
 
     @Override

@@ -24,6 +24,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center_vertical"
             android:orientation="horizontal">
 
             <SeekBar
@@ -36,12 +37,13 @@
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="对比度"/>
+                android:text="饱和度"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center_vertical"
             android:orientation="horizontal">
 
             <SeekBar
@@ -60,6 +62,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center_vertical"
             android:orientation="horizontal">
 
             <SeekBar
@@ -72,7 +75,7 @@
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="饱和度"/>
+                android:text="对比度"/>
         </LinearLayout>
 
     </LinearLayout>
