@@ -52,4 +52,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="图片"/>
+    <Button
+        android:id="@+id/button_broken_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="折线图"/>
 </LinearLayout>

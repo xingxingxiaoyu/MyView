@@ -20,7 +20,7 @@
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@mipmap/img_0667">
+                android:background="@mipmap/img">
             </FrameLayout>
         </LinearLayout>
     </com.xuyu.myview.side_slipe.SideMenuLayout>

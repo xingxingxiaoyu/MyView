@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.button_bezier_curver).setOnClickListener(this);
         findViewById(R.id.button_pay_password).setOnClickListener(this);
         findViewById(R.id.button_bitmap).setOnClickListener(this);
+        findViewById(R.id.button_broken_line).setOnClickListener(this);
     }
 
     @Override
@@ -70,6 +71,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 intent.setClass(this, EighthActivity.class);
                 break;
             case R.id.button_bitmap:
+                intent.setClass(this, NinthActivity.class);
+                break;
+            case R.id.button_broken_line:
                 intent.setClass(this, NinthActivity.class);
                 break;
         }
