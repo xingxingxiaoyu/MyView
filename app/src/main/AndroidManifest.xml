@@ -43,6 +43,8 @@
         </activity>
         <activity android:name=".broken_line.TenthActivity">
         </activity>
+        <activity android:name=".broken_line.Main2Activity">
+        </activity>
     </application>
 
 </manifest>
