@@ -11,6 +11,8 @@ import com.xuyu.myview.pay_password.EighthActivity
 import com.xuyu.myview.side_slipe.FourthActivity
 import com.xuyu.myview.animator_view.FifthActivity
 import com.xuyu.myview.automaticball.FirstActivity
+import com.xuyu.myview.bitmap.NinthActivity
+import com.xuyu.myview.broken_line.TenthActivity
 import com.xuyu.myview.ferris_wheel.SixthActivity
 import com.xuyu.myview.identifying_code.ThirdActivity
 import com.xuyu.myview.clock.SecondActivity
@@ -47,8 +49,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.button_ferris_wheel -> intent.setClass(this, SixthActivity::class.java)
             R.id.button_bezier_curver -> intent.setClass(this, SeventhActivity::class.java)
             R.id.button_pay_password -> intent.setClass(this, EighthActivity::class.java)
-            R.id.button_bitmap -> intent.setClass(this, BitmapEditActivity::class.java)
-            R.id.button_broken_line -> intent.setClass(this, BitmapEditActivity::class.java)
+            R.id.button_bitmap -> intent.setClass(this, NinthActivity::class.java)
+            R.id.button_broken_line -> intent.setClass(this, TenthActivity::class.java)
         }
         startActivity(intent)
     }
