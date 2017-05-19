@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,4 +7,9 @@
     android:layout_height="match_parent"
     tools:context="com.xuyu.myview.broken_line.TenthActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <com.xuyu.myview.broken_line.BrokenLineView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:main_line_color="#000000"
+        app:mode="broken_line_with_point"/>
+</FrameLayout>
