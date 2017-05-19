@@ -6,8 +6,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="20dp"
-    tools:context="com.xuyu.myview.identifying_code.ThirdActivity">
-    <com.xuyu.myview.identifying_code.IdentifyingCodeView
+    tools:context=".activity.identifying_code.ThirdActivity">
+    <com.xuyu.myview.activity.identifying_code.IdentifyingCodeView
         android:layout_width="200dp"
         android:layout_height="50dp"/>
 

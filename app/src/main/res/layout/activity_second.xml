@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingTop="10dp"
-    tools:context="com.xuyu.myview.clock.SecondActivity">
+    tools:context=".activity.clock.SecondActivity">
 
-    <com.xuyu.myview.clock.ClockView
+    <com.xuyu.myview.activity.clock.ClockView
         android:id="@+id/clockView"
         android:layout_width="300dp"
         android:layout_height="400dp"

@@ -5,9 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.xuyu.myview.broken_line.TenthActivity">
+    tools:context=".activity.broken_line.TenthActivity">
 
-    <com.xuyu.myview.broken_line.BrokenLineView
+    <com.xuyu.myview.activity.broken_line.BrokenLineView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:main_line_color="#000000"

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.xuyu.myview.pay_password.EighthActivity">
+    tools:context=".activity.pay_password.EighthActivity">
 
     <Button
         android:id="@+id/button"

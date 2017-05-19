@@ -5,8 +5,8 @@
     android:id="@+id/activity_animator"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.xuyu.myview.animator_view.FifthActivity">
-    <com.xuyu.myview.animator_view.AnimatorLayout
+    tools:context=".activity.animator_view.FifthActivity">
+    <com.xuyu.myview.activity.animator_view.AnimatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
