@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TButton">
+        <attr name="press" format="color"/>
+        <attr name="unpress" format="color"/>
+    </declare-styleable>
+</resources>
