@@ -1,4 +1,4 @@
-package com.xuyu.myview.bitmap;
+package com.xuyu.myview.bitmap.bitmap_edit;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;

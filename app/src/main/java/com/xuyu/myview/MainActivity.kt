@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.view.View
 
 import com.xuyu.myview.bezier_curve.SeventhActivity
-import com.xuyu.myview.bitmap.NinthActivity
+import com.xuyu.myview.bitmap.bitmap_edit.BitmapEditActivity
 import com.xuyu.myview.pay_password.EighthActivity
 import com.xuyu.myview.side_slipe.FourthActivity
 import com.xuyu.myview.animator_view.FifthActivity
@@ -47,8 +47,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.button_ferris_wheel -> intent.setClass(this, SixthActivity::class.java)
             R.id.button_bezier_curver -> intent.setClass(this, SeventhActivity::class.java)
             R.id.button_pay_password -> intent.setClass(this, EighthActivity::class.java)
-            R.id.button_bitmap -> intent.setClass(this, NinthActivity::class.java)
-            R.id.button_broken_line -> intent.setClass(this, NinthActivity::class.java)
+            R.id.button_bitmap -> intent.setClass(this, BitmapEditActivity::class.java)
+            R.id.button_broken_line -> intent.setClass(this, BitmapEditActivity::class.java)
         }
         startActivity(intent)
     }

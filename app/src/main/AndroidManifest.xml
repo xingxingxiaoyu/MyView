@@ -33,7 +33,7 @@
         </activity>
         <activity android:name=".pay_password.EighthActivity">
         </activity>
-        <activity android:name=".bitmap.NinthActivity">
+        <activity android:name=".bitmap.bitmap_edit.BitmapEditActivity">
         </activity>
         <activity android:name=".bezier_curve.SeventhActivity">
         </activity>
@@ -44,6 +44,8 @@
         <activity android:name=".broken_line.TenthActivity">
         </activity>
         <activity android:name=".broken_line.Main2Activity">
+        </activity>
+        <activity android:name=".bitmap.NinthActivity">
         </activity>
     </application>
 

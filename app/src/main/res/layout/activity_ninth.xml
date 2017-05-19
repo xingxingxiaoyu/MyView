@@ -1,86 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_ninth"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.xuyu.myview.bitmap.NinthActivity">
 
-    <ImageView
-        android:id="@+id/image"
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:scaleType="centerCrop"
-        android:src="@mipmap/psb"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:orientation="vertical"
-        android:padding="10dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
-
-            <SeekBar
-                android:id="@+id/seekbar_1"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"/>
-
-            <TextView
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:text="饱和度"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            android:visibility="gone">
-
-            <SeekBar
-                android:id="@+id/seekbar_2"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"/>
-
-            <TextView
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:text="亮度"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            android:visibility="gone">
-
-            <SeekBar
-                android:id="@+id/seekbar_3"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"/>
-
-            <TextView
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:text="对比度"/>
-        </LinearLayout>
-
-    </LinearLayout>
-
-
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>
