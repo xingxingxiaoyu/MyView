@@ -7,15 +7,13 @@
     android:layout_height="match_parent"
     tools:context="com.xuyu.myview.activity.animator.FifthActivity">
     <com.xuyu.myview.activity.animator.TButton
+        app:unpress="#00ff00"
+        app:press="#00ff00"
         android:layout_width="50dp"
         android:layout_height="50dp"/>
     <com.xuyu.myview.activity.animator.CircleButtonMenu
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <com.xuyu.myview.activity.animator.TButton
-            android:layout_width="50dp"
-            android:layout_height="50dp"/>
-
     </com.xuyu.myview.activity.animator.CircleButtonMenu>
 
 </LinearLayout>
