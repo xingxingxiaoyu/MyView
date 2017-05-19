@@ -11,6 +11,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.xuyu.myview.util.UnitConversionUtil;
+
 /**
  * Created by: xuyu
  * <p>
@@ -59,8 +61,8 @@ public class FerrisWheelLayout extends ViewGroup
         {
             View childAt = getChildAt(i);
             LayoutParams layoutParams = childAt.getLayoutParams();
-            layoutParams.width = Dp2Px(FerrisWheelLayout.this.getContext(), 40);
-            layoutParams.height = Dp2Px(FerrisWheelLayout.this.getContext(), 40);
+            layoutParams.width = UnitConversionUtil.Dp2Px(40);
+            layoutParams.height = UnitConversionUtil.Dp2Px(40);
         }
         int length = Math.min(width, height);
         setMeasuredDimension(length, length);
@@ -147,26 +149,26 @@ public class FerrisWheelLayout extends ViewGroup
     @Override
     public boolean onTouchEvent(MotionEvent event)
     {
-        Log.e(TAG,"onTouchEvent");
+        Log.e(TAG, "onTouchEvent");
         switch (event.getAction())
         {
             case MotionEvent.ACTION_DOWN:
-                Log.e(TAG,"onTouchEvent  ACTION_DOWN");
+                Log.e(TAG, "onTouchEvent  ACTION_DOWN");
                 startX = event.getX();
                 startY = event.getY();
                 break;
             case MotionEvent.ACTION_MOVE:
-                Log.e(TAG,"onTouchEvent  ACTION_MOVE");
+                Log.e(TAG, "onTouchEvent  ACTION_MOVE");
                 currentX = event.getX();
                 currentY = event.getY();
-                changeAngle(startX,startY,currentX,currentY);
+                changeAngle(startX, startY, currentX, currentY);
 //                postInvalidate();
                 requestLayout();
-                startX=currentX;
-                startY=currentY;
+                startX = currentX;
+                startY = currentY;
                 break;
             case MotionEvent.ACTION_UP:
-                Log.e(TAG,"onTouchEvent  ACTION_UP");
+                Log.e(TAG, "onTouchEvent  ACTION_UP");
                 endX = event.getX();
                 endY = event.getY();
                 break;
@@ -176,19 +178,7 @@ public class FerrisWheelLayout extends ViewGroup
 
     private void changeAngle(float startX, float startY, float currentX, float currentY)
     {
-        angle+=Math.atan2(currentY-centerY,currentX-centerX)-Math.atan2(startY-centerY,startX-centerX);
+        angle += Math.atan2(currentY - centerY, currentX - centerX) - Math.atan2(startY - centerY, startX - centerX);
     }
 
-
-    public int Dp2Px(Context context, float dp)
-    {
-        final float scale = context.getResources().getDisplayMetrics().density;
-        return (int) (dp * scale + 0.5f);
-    }
-
-    public int Px2Dp(Context context, float px)
-    {
-        final float scale = context.getResources().getDisplayMetrics().density;
-        return (int) (px / scale + 0.5f);
-    }
 }

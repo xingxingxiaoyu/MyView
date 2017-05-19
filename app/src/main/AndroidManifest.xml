@@ -5,6 +5,7 @@
           android:versionName="1.0.0">
 
     <application
+        android:name=".application.BApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -25,7 +26,7 @@
         </activity>
         <activity android:name=".activity.side_slipe.FourthActivity">
         </activity>
-        <activity android:name=".activity.animator_view.FifthActivity">
+        <activity android:name=".activity.animator.person_animator.PersonAnimatorActivity">
         </activity>
         <activity android:name=".activity.ferris_wheel.SixthActivity">
         </activity>
@@ -43,9 +44,9 @@
         </activity>
         <activity android:name=".activity.broken_line.TenthActivity">
         </activity>
-        <activity android:name=".activity.broken_line.Main2Activity">
-        </activity>
         <activity android:name=".activity.bitmap.NinthActivity">
+        </activity>
+        <activity android:name=".activity.animator.FifthActivity">
         </activity>
     </application>
 

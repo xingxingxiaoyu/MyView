@@ -5,7 +5,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.xuyu.myview.activity.animator_view.FifthActivity;
+import com.xuyu.myview.activity.animator.FifthActivity;
+import com.xuyu.myview.activity.animator.person_animator.PersonAnimatorActivity;
 import com.xuyu.myview.activity.automatic_ball.FirstActivity;
 import com.xuyu.myview.activity.bezier_curve.SeventhActivity;
 import com.xuyu.myview.activity.bitmap.NinthActivity;

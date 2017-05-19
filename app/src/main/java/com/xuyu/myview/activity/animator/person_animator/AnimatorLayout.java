@@ -1,4 +1,4 @@
-package com.xuyu.myview.activity.animator_view;
+package com.xuyu.myview.activity.animator.person_animator;
 
 import android.content.Context;
 import android.graphics.Canvas;
