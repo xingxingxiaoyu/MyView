@@ -48,6 +48,8 @@
         </activity>
         <activity android:name=".activity.animator.FifthActivity">
         </activity>
+        <activity android:name=".activity.animator.sinple_animator.SimpleAnimatorActivity">
+        </activity>
     </application>
 
 </manifest>

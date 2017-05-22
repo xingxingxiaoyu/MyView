@@ -17,6 +17,8 @@
             android:background="@drawable/black_circle"
             android:gravity="center"
             android:text="人"
+            android:onClick="onClick"
+            android:id="@+id/tv_person"
             android:textColor="#ffffff"/>
 
         <TextView
@@ -25,6 +27,8 @@
             android:background="@drawable/black_circle"
             android:gravity="center"
             android:text="简单动画"
+            android:onClick="onClick"
+            android:id="@+id/tv_simple"
             android:textColor="#ffffff"/>
 
         <TextView
