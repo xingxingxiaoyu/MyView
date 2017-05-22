@@ -6,14 +6,48 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.xuyu.myview.activity.animator.FifthActivity">
-    <com.xuyu.myview.activity.animator.TButton
-        app:unpress="#00ff00"
-        app:press="#00ff00"
-        android:layout_width="50dp"
-        android:layout_height="50dp"/>
+
     <com.xuyu.myview.activity.animator.CircleButtonMenu
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/black_circle"
+            android:gravity="center"
+            android:text="人"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/black_circle"
+            android:gravity="center"
+            android:text="简单动画"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/black_circle"
+            android:gravity="center"
+            android:text="简单动画1"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/black_circle"
+            android:gravity="center"
+            android:text="简单动画2"
+            android:textColor="#ffffff"/>
+        <com.xuyu.myview.activity.animator.TButton
+            android:id="@+id/button_center"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:press="@color/colorPrimary"
+            app:unpress="@color/colorPrimaryDark"/>
     </com.xuyu.myview.activity.animator.CircleButtonMenu>
 
 </LinearLayout>

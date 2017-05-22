@@ -7,6 +7,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.os.Handler;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 
 import com.xuyu.myview.R;
@@ -55,8 +56,9 @@ public class ClockView extends View
 
     private void init(Context context, AttributeSet attrs, int defStyleAttr)
     {
-        TypedArray typedArray = context.getTheme().obtainStyledAttributes(attrs, R.styleable.ClockView, defStyleAttr, 0);
+        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.ClockView, defStyleAttr, 0);
         int indexCount = typedArray.getIndexCount();
+        Log.e("====",indexCount+"");
         Calendar c = Calendar.getInstance();
         int currentHour = c.get(Calendar.HOUR_OF_DAY);
         int currentMinute = c.get(Calendar.MINUTE);
@@ -79,6 +81,7 @@ public class ClockView extends View
                     break;
             }
         }
+        typedArray.recycle();
         mPaintCircle = new Paint(Paint.ANTI_ALIAS_FLAG);
         mPaintCircle.setColor(Color.GRAY);
         mPaintCircle.setStyle(Paint.Style.STROKE);
