@@ -174,7 +174,7 @@ public class CircleButtonMenu extends ViewGroup
                         }
                     }
                 });
-                openAnimator.setInterpolator(new OvershootInterpolator());
+                openAnimator.setInterpolator(new TInterpolator());
                 openAnimator.start();
             } else if (state == STATE_OPEN)
             {
@@ -209,7 +209,7 @@ public class CircleButtonMenu extends ViewGroup
                         }
                     }
                 });
-                closeAnimator.setInterpolator(new OvershootInterpolator());
+                closeAnimator.setInterpolator(new TInterpolator());
                 closeAnimator.start();
             }
         }
