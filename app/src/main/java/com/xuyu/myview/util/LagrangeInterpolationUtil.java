@@ -9,6 +9,16 @@ import java.util.List;
 
 public class LagrangeInterpolationUtil
 {
+
+    /**获取
+     * @param x
+     * @return
+     */
+    public double getValue(double x)
+    {
+        return 0;
+    }
+
     /**
      * point[0]  x
      * point[1]  y
@@ -32,46 +42,21 @@ public class LagrangeInterpolationUtil
         double[][]baseMatrix=getBaseMatrix(pointList);
     }
 
+    /**获取方程组系数矩阵
+     * @param pointList
+     * @return
+     */
     private double[][] getBaseMatrix(List<double[]> pointList)
     {
         int size = pointList.size();
         double[][] baseMatrix = new double[size][size];
+        for (int i = 0; i < size; i++)
+        {
+            for (int j = 0; j < size; j++)
+            {
+//                baseMatrix[i][j]=
+            }
+        }
         return baseMatrix;
-    }
-
-    public double getValue(double x)
-    {
-        return 0;
-    }
-
-    private double getDet(double[][] matrix)
-    {
-        int length = matrix.length;
-        double result = 0;
-        if (length == 1)
-        {
-            result = matrix[0][0];
-        } else
-        {
-            for (int i = 0; i < length; i++)
-            {
-                result += matrix[0][i] * Math.pow(-1, i) * getDet(ignore(0, i, matrix));
-            }
-        }
-        return result;
-    }
-
-    private double[][] ignore(int i, int j, double[][] matrix)
-    {
-        int length = matrix.length;
-        double[][] result = new double[length - 1][length - 1];
-        for (int k = 0; k < length - 1; k++)
-        {
-            for (int m = 0; m < length - 1; m++)
-            {
-                result[k][m] = matrix[k >= i ? k + 1 : i][m >= j ? m + 1 : m];
-            }
-        }
-        return result;
     }
 }
