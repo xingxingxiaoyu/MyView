@@ -1,6 +1,11 @@
 package com.xuyu.myview.util;
 
+import android.util.Log;
+
+import com.google.gson.Gson;
+
 import java.util.List;
+import java.util.logging.Logger;
 
 /**
  * Created by Administrator on 2017/5/22.
@@ -9,14 +14,36 @@ import java.util.List;
 
 public class LagrangeInterpolationUtil
 {
+    /**
+     * 获取
+     *
+     * @param x
+     * @return
+     */
+    public static double getValue(double x, double[] a)
+    {
+        double result = 0;
+        for (int i = 0; i <= a.length - 1; i++)
+        {
+            result += a[i] * Math.pow(x, a.length - 1 - i);
+        }
+        return result;
+    }
 
-    /**获取
+    /**
+     * 获取
+     *
      * @param x
      * @return
      */
     public double getValue(double x)
     {
-        return 0;
+        double result = 0;
+        for (int i = 0; i <= n; i++)
+        {
+            result += a[i] * Math.pow(x, n - i);
+        }
+        return result;
     }
 
     /**
@@ -29,6 +56,12 @@ public class LagrangeInterpolationUtil
      * 函数的多项式系数
      */
     private double[] a;
+
+    public double[] getA()
+    {
+        return a;
+    }
+
     /**
      * 函数的最高项系数
      */
@@ -38,11 +71,30 @@ public class LagrangeInterpolationUtil
     {
         this.pointList = pointList;
         n = pointList.size() - 1;
-        a = new double[n];
-        double[][]baseMatrix=getBaseMatrix(pointList);
+        a = new double[n + 1];
+        double[][] baseMatrix = getBaseMatrix(pointList);
+        double[] b = getB(pointList);
+        for (int i = 0; i <= n; i++)
+        {
+            double[][] matrix = MathUtil.change(i, b, baseMatrix);
+            double det = MathUtil.getDet(baseMatrix);
+            a[i] = MathUtil.getDet(matrix) / det;
+        }
     }
 
-    /**获取方程组系数矩阵
+    private double[] getB(List<double[]> pointList)
+    {
+        double[] b = new double[n];
+        for (int i = 0; i < n; i++)
+        {
+            b[i] = pointList.get(i)[1];
+        }
+        return b;
+    }
+
+    /**
+     * 获取方程组系数矩阵
+     *
      * @param pointList
      * @return
      */
@@ -54,9 +106,21 @@ public class LagrangeInterpolationUtil
         {
             for (int j = 0; j < size; j++)
             {
-//                baseMatrix[i][j]=
+                double[] doubles = pointList.get(i);
+                baseMatrix[i][j] = MathUtil.Anm(n - j, (int) doubles[2]) * pow(doubles[0], n - j - (int) doubles[2]);
             }
         }
         return baseMatrix;
+    }
+
+    private double pow(double x, int n)
+    {
+        if (n < 0)
+        {
+            return 0;
+        } else
+        {
+            return Math.pow(x, n);
+        }
     }
 }
