@@ -180,5 +180,4 @@ public class FerrisWheelLayout extends ViewGroup
     {
         angle += Math.atan2(currentY - centerY, currentX - centerX) - Math.atan2(startY - centerY, startX - centerX);
     }
-
 }

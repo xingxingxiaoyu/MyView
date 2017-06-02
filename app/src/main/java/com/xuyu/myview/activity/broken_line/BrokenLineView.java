@@ -9,6 +9,8 @@ import android.view.View;
 
 import com.xuyu.myview.R;
 
+import java.util.List;
+
 /**
  * Created by Administrator on 2017/5/19.
  */
@@ -69,5 +71,25 @@ public class BrokenLineView extends View
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
         mHeight = getHeight();
         mWidth = getWidth();
+    }
+
+    private List<double[]> pointList;
+
+    public void setPointList(List<double[]> pointList)
+    {
+        this.pointList = pointList;
+    }
+
+    /**
+     * 真实坐标转为屏幕坐标的工具类
+     *
+     * @param point
+     * @return
+     */
+    private int[] realCoordinateToScreenCoordinate(double[] point)
+    {
+        int[] ints = new int[2];
+
+        return ints;
     }
 }
