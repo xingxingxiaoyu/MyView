@@ -176,6 +176,7 @@ public class BezierShowView extends View
     public void start2()
     {
         curveList2.clear();
+
         ValueAnimator valueAnimator = ValueAnimator.ofFloat(0F, 1F);
         valueAnimator.setDuration(5000);
         valueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener()
