@@ -16,6 +16,7 @@ import com.xuyu.myview.activity.ferris_wheel.SixthActivity;
 import com.xuyu.myview.activity.identifying_code.ThirdActivity;
 import com.xuyu.myview.activity.pay_password.EighthActivity;
 import com.xuyu.myview.activity.side_slipe.FourthActivity;
+import com.xuyu.myview.activity.star.ElevenActivity;
 
 /**
  * Created by Administrator on 2017/5/19.
@@ -63,6 +64,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.button_broken_line:
                 intent.setClass(this, TenthActivity.class);
+                break;
+            case R.id.button_star:
+                intent.setClass(this, ElevenActivity.class);
                 break;
         }
         startActivity(intent);
