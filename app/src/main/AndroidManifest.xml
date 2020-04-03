@@ -11,7 +11,8 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.star.ElevenActivity"></activity>
+        <activity android:name=".activity.list.ListActivity"></activity>
+        <activity android:name=".activity.star.ElevenActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,22 +20,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.automatic_ball.FirstActivity"></activity>
-        <activity android:name=".activity.clock.SecondActivity"></activity>
-        <activity android:name=".activity.identifying_code.ThirdActivity"></activity>
-        <activity android:name=".activity.side_slipe.FourthActivity"></activity>
-        <activity android:name=".activity.animator.person_animator.PersonAnimatorActivity"></activity>
-        <activity android:name=".activity.ferris_wheel.SixthActivity"></activity>
-        <activity android:name=".activity.bezier_curve.my_bezier_line.MyBezierActivity"></activity>
-        <activity android:name=".activity.pay_password.EighthActivity"></activity>
-        <activity android:name=".activity.bitmap.bitmap_edit.BitmapEditActivity"></activity>
-        <activity android:name=".activity.bezier_curve.SeventhActivity"></activity>
-        <activity android:name=".activity.bezier_curve.bezier_show.BezierShowActivity"></activity>
-        <activity android:name=".activity.bezier_curve.path.PathTestActivity"></activity>
-        <activity android:name=".activity.broken_line.TenthActivity"></activity>
-        <activity android:name=".activity.bitmap.NinthActivity"></activity>
-        <activity android:name=".activity.animator.FifthActivity"></activity>
-        <activity android:name=".activity.animator.sinple_animator.SimpleAnimatorActivity"></activity>
+        <activity android:name=".activity.automatic_ball.FirstActivity" />
+        <activity android:name=".activity.clock.SecondActivity" />
+        <activity android:name=".activity.identifying_code.ThirdActivity" />
+        <activity android:name=".activity.side_slipe.FourthActivity" />
+        <activity android:name=".activity.animator.person_animator.PersonAnimatorActivity" />
+        <activity android:name=".activity.ferris_wheel.SixthActivity" />
+        <activity android:name=".activity.bezier_curve.my_bezier_line.MyBezierActivity" />
+        <activity android:name=".activity.pay_password.EighthActivity" />
+        <activity android:name=".activity.bitmap.bitmap_edit.BitmapEditActivity" />
+        <activity android:name=".activity.bezier_curve.SeventhActivity" />
+        <activity android:name=".activity.bezier_curve.bezier_show.BezierShowActivity" />
+        <activity android:name=".activity.bezier_curve.path.PathTestActivity" />
+        <activity android:name=".activity.broken_line.TenthActivity" />
+        <activity android:name=".activity.bitmap.NinthActivity" />
+        <activity android:name=".activity.animator.FifthActivity" />
+        <activity android:name=".activity.animator.sinple_animator.SimpleAnimatorActivity" />
     </application>
 
 </manifest>

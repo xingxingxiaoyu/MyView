@@ -1,6 +1,6 @@
 package com.xuyu.myview.activity.side_slipe;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.xuyu.myview.R;

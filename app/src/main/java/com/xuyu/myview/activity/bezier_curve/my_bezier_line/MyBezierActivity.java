@@ -2,7 +2,7 @@ package com.xuyu.myview.activity.bezier_curve.my_bezier_line;
 
 import android.graphics.Color;
 import android.graphics.Point;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;

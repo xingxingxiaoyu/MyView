@@ -2,11 +2,10 @@ package com.xuyu.myview;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 
 import com.xuyu.myview.activity.animator.FifthActivity;
-import com.xuyu.myview.activity.animator.person_animator.PersonAnimatorActivity;
 import com.xuyu.myview.activity.automatic_ball.FirstActivity;
 import com.xuyu.myview.activity.bezier_curve.SeventhActivity;
 import com.xuyu.myview.activity.bitmap.NinthActivity;
@@ -14,6 +13,7 @@ import com.xuyu.myview.activity.broken_line.TenthActivity;
 import com.xuyu.myview.activity.clock.SecondActivity;
 import com.xuyu.myview.activity.ferris_wheel.SixthActivity;
 import com.xuyu.myview.activity.identifying_code.ThirdActivity;
+import com.xuyu.myview.activity.list.ListActivity;
 import com.xuyu.myview.activity.pay_password.EighthActivity;
 import com.xuyu.myview.activity.side_slipe.FourthActivity;
 import com.xuyu.myview.activity.star.ElevenActivity;
@@ -22,19 +22,16 @@ import com.xuyu.myview.activity.star.ElevenActivity;
  * Created by Administrator on 2017/5/19.
  */
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener
-{
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-    public void onClick(View v)
-    {
+
+    public void onClick(View v) {
         Intent intent = new Intent();
-        switch (v.getId())
-        {
+        switch (v.getId()) {
             case R.id.button_automatic_ball:
                 intent.setClass(this, FirstActivity.class);
                 break;
@@ -67,6 +64,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.button_star:
                 intent.setClass(this, ElevenActivity.class);
+                break;
+            case R.id.button_list:
+                intent.setClass(this, ListActivity.class);
                 break;
         }
         startActivity(intent);

@@ -1,15 +1,15 @@
-package com.xuyu.myview.activity.star;
+package com.xuyu.myview.activity.list;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.xuyu.myview.R;
 
-public class ElevenActivity extends AppCompatActivity {
+public class ListActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_eleven);
+        setContentView(R.layout.activity_list);
     }
 }

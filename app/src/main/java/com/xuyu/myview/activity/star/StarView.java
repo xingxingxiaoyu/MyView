@@ -50,13 +50,13 @@ public class StarView extends View {
         Path path = new Path();
         canvas.translate(radius, radius);
         double startDegrees = -Math.PI / 2;
-        double changeDegress = Math.PI * 13 / 21;
+        double changeDegress = Math.PI * 20 / 21;
         path.moveTo((float) (radius * Math.cos(startDegrees)), (float) (radius * Math.sin(startDegrees)));
         for (int i = 0; i < 42; i++) {
             startDegrees += changeDegress;
-            path.lineTo((float) (radius * Math.cos(startDegrees)), (float) (radius * Math.sin(startDegrees)));
-//            path.quadTo((float) (radius * Math.cos(startDegrees - Math.PI * 2 / 5)), (float) (radius * Math.sin(startDegrees - Math.PI * 2 / 5)),
-//                    (float) (radius * Math.cos(startDegrees)), (float) (radius * Math.sin(startDegrees)));
+//            path.lineTo((float) (radius * Math.cos(startDegrees)), (float) (radius * Math.sin(startDegrees)));
+            path.quadTo((float) (radius * Math.cos(startDegrees - Math.PI * 5 / 21)), (float) (radius * Math.sin(startDegrees - Math.PI * 5 / 21)),
+                    (float) (radius * Math.cos(startDegrees)), (float) (radius * Math.sin(startDegrees)));
         }
         canvas.drawPath(path, new Paint());
         super.onDraw(canvas);
