@@ -11,7 +11,8 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.list.ListActivity"></activity>
+        <activity android:name=".activity.list.planb.ListPlanbActivity"></activity>
+        <activity android:name=".activity.list.ListActivity" />
         <activity android:name=".activity.star.ElevenActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

@@ -29,6 +29,8 @@ public class PathView extends View {
     private Rect mRect;
     private float[] pos = new float[2];
     private float[] tan = new float[2];
+    private PathMeasure mPathMeasure;
+    private float mLength;
 
     public PathView(Context context) {
         this(context, null);
@@ -53,15 +55,15 @@ public class PathView extends View {
 
     public void setPath(Path path) {
         mPath = path;
+        mPathMeasure = new PathMeasure(mPath, false);
+        mLength = mPathMeasure.getLength();
         postInvalidate();
     }
 
     public void setProgress(int progress) {
         mProgress = progress;
         if (mPath != null) {
-            PathMeasure pathMeasure = new PathMeasure(mPath, false);
-            float length = pathMeasure.getLength();
-            pathMeasure.getPosTan(progress / 100f * length, pos, tan);
+            mPathMeasure.getPosTan(progress / 100f * mLength, pos, tan);
             Log.e("===", "pos " + pos[0] + " " + pos[1] + " " + "tan " + tan[0] + " " + tan[1]);
         }
         postInvalidate();
