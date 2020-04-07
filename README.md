@@ -1,3 +1,2 @@
 # MyView
-some simple custom view
-This project has some simple custom view
+一些杂七杂八的自定义控件。
