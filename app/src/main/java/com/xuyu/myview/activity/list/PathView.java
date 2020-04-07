@@ -21,6 +21,7 @@ import androidx.annotation.Nullable;
  * @date 2020/4/7
  */
 public class PathView extends View {
+    public static final String TAG = "PathView";
 
     private Path mPath;
     private Paint mPaint;
@@ -31,6 +32,7 @@ public class PathView extends View {
     private float[] tan = new float[2];
     private PathMeasure mPathMeasure;
     private float mLength;
+    private float mMax = 100f;
 
     public PathView(Context context) {
         this(context, null);
@@ -60,11 +62,17 @@ public class PathView extends View {
         postInvalidate();
     }
 
+    public void setMax(int max) {
+        mMax = max;
+    }
+
     public void setProgress(int progress) {
         mProgress = progress;
         if (mPath != null) {
-            mPathMeasure.getPosTan(progress / 100f * mLength, pos, tan);
-            Log.e("===", "pos " + pos[0] + " " + pos[1] + " " + "tan " + tan[0] + " " + tan[1]);
+            mPathMeasure.getPosTan(progress / mMax * mLength, pos, tan);
+            Log.e(TAG, "pos " + pos[0] + " " + pos[1] + " " + "tan " + tan[0] + " " + tan[1]);
+
+
         }
         postInvalidate();
     }
@@ -86,7 +94,7 @@ public class PathView extends View {
             canvas.translate(pos[0], pos[1]);
             double atan = Math.atan(tan[1] / tan[0]);
             float degrees = (float) (atan * 180 / Math.PI);
-            Log.e("===", "degrees " + degrees);
+            Log.e(TAG, "degrees " + degrees);
             degrees += 90;
             if (tan[0] < 0) {
                 degrees += 180;

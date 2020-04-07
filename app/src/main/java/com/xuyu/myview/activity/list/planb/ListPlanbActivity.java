@@ -34,8 +34,8 @@ public class ListPlanbActivity extends AppCompatActivity {
         int screenWidth = (int) (screenWidthDp * scale + 0.5f);
         mPathView = findViewById(R.id.path_view);
         path = new Path();
+        path.moveTo(screenWidth / 3, 0);
         for (int i = 0; i < 50; i++) {
-            path.moveTo(screenWidth / 3, 0 + 300 * i * 2);
             path.lineTo(screenWidth / 3, 250 + 300 * i * 2);
             path.lineTo(screenWidth / 3 * 2, 250 + 300 * i * 2);
             path.lineTo(screenWidth / 3 * 2, 300 + 300 * i * 2);
@@ -47,6 +47,8 @@ public class ListPlanbActivity extends AppCompatActivity {
         }
         mPathView.setImage(R.mipmap.airplane2);
         mPathView.setPath(path);
+        final int max = 10000;
+        mPathView.setMax(max);
 
         recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
             int scrollY = 0;
@@ -57,7 +59,7 @@ public class ListPlanbActivity extends AppCompatActivity {
                 path.offset(dx, -dy);
                 mPathView.setPath(path);
                 scrollY += dy;
-                int progress = (int) (scrollY / (300 * 100 - screenHeightDp * scale) * 100);
+                int progress = (int) (scrollY / (300 * 100 - screenHeightDp * scale) * max);
                 mPathView.setProgress(progress);
                 Log.e(TAG, "onScrolled: scrollY " + scrollY);
                 Log.e(TAG, "onScrolled: progress " + progress);
