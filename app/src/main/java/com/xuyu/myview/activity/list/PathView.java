@@ -74,7 +74,8 @@ public class PathView extends View {
 
 
         }
-        postInvalidate();
+//        postInvalidate();
+        invalidate();
     }
 
     public void setImage(int imageRes) {

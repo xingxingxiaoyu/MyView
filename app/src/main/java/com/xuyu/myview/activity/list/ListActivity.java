@@ -52,13 +52,14 @@ public class ListActivity extends AppCompatActivity {
                         if (child != currentPathView) {
                             if (currentPathView != null) {
                                 child.setProgress(100 - progress);
-                                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                                    child.setZ(1);
-                                }
+
                                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                                     currentPathView.setZ(0);
                                 }
                                 currentPathView.setProgress(-1);
+                                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                                    child.setZ(1);
+                                }
 
                             } else {
                                 child.setProgress(100 - progress);
