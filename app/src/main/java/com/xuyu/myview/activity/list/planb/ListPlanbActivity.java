@@ -11,7 +11,7 @@ import android.util.Log;
 import android.view.View;
 
 import com.xuyu.myview.R;
-import com.xuyu.myview.activity.list.PathView;
+import com.xuyu.myview.activity.list.planb.PathView;
 
 
 public class ListPlanbActivity extends AppCompatActivity {
@@ -45,13 +45,14 @@ public class ListPlanbActivity extends AppCompatActivity {
             path.lineTo(screenWidth / 3, 300 + 300 * (i * 2 + 1));
 
         }
-        mPathView.setImage(R.mipmap.airplane2);
         mPathView.setPath(path);
         final int max = 10000;
         mPathView.setMax(max);
 
         recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
             int scrollY = 0;
+
+            long time = System.currentTimeMillis();
 
             @Override
             public void onScrolled(@NonNull RecyclerView recyclerView, int dx, int dy) {
@@ -63,6 +64,14 @@ public class ListPlanbActivity extends AppCompatActivity {
                 mPathView.setProgress(progress);
                 Log.e(TAG, "onScrolled: scrollY " + scrollY);
                 Log.e(TAG, "onScrolled: progress " + progress);
+                Log.e(TAG, "onScrolled: progress " + progress);
+                long currentTimeMillis = System.currentTimeMillis();
+                int dtime = (int) (currentTimeMillis - time);
+                Log.e(TAG, "onScrolled: dtime " + dtime + " dy " + dy);
+
+                mPathView.setAnimationSpeed(dy / dtime);
+                time = currentTimeMillis;
+
 
             }
         });
