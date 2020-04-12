@@ -25,6 +25,22 @@ public class ListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
+
+        final PathView pathView = findViewById(R.id.path_view);
+        Path path = new Path();
+        path.addCircle(500, 800, 400, Path.Direction.CCW);
+        pathView.setImage(R.mipmap.airplane2);
+        pathView.setPath(path);
+        final Handler handler = new Handler();
+        handler.post(new Runnable() {
+            private int i = 0;
+            @Override
+            public void run() {
+                pathView.setProgress(i++ % 100);
+                handler.postDelayed(this,50);
+            }
+        });
+
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         int screenWidthDp = getResources().getConfiguration().screenWidthDp;

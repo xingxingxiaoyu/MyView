@@ -12,6 +12,7 @@ public class ExampleUnitTest
     @Test
     public void addition_isCorrect() throws Exception
     {
-        assertEquals(4, 2 + 2);
+        System.out.println(Math.atan(1111111));
+        System.out.println(Math.atan(-1111111));
     }
 }

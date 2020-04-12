@@ -70,7 +70,7 @@ public class PathView extends View {
         mProgress = progress;
         if (mPath != null) {
             mPathMeasure.getPosTan(progress / mMax * mLength, pos, tan);
-            Log.e(TAG, "pos " + pos[0] + " " + pos[1] + " " + "tan " + tan[0] + " " + tan[1]);
+            Log.e(TAG, "progress " + progress + " pos " + pos[0] + " " + pos[1] + " " + "tan " + tan[0] + " " + tan[1]);
 
 
         }
@@ -95,13 +95,17 @@ public class PathView extends View {
             canvas.translate(pos[0], pos[1]);
             double atan = Math.atan(tan[1] / tan[0]);
             float degrees = (float) (atan * 180 / Math.PI);
-            Log.e(TAG, "degrees " + degrees);
+            Log.e(TAG, "pre degrees " + degrees);
             degrees += 90;
             if (tan[0] < 0) {
-                degrees += 180;
+                degrees = degrees + 180;
             }
+            Log.e(TAG, "last degrees " + degrees);
+
             canvas.rotate(degrees);
-            canvas.drawBitmap(mBitmap, null, mRect, mPaint);
+            if (mBitmap != null) {
+                canvas.drawBitmap(mBitmap, null, mRect, mPaint);
+            }
             canvas.restore();
         }
     }
