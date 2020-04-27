@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.xuyu.myview.activity.animator.sinple_animator.SimpleAnimatorActivity">
+    tools:context="com.xujiafeng.myview.activity.animator.sinple_animator.SimpleAnimatorActivity">
 
-    <com.xuyu.myview.activity.animator.sinple_animator.SimpleAnimatorView
+    <com.xujiafeng.myview.activity.animator.sinple_animator.SimpleAnimatorView
         android:layout_margin="30dp"
         android:id="@+id/simple_animator_view"
         android:layout_width="match_parent"

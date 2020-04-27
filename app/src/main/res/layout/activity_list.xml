@@ -19,7 +19,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.xuyu.myview.activity.list.PathView
+    <com.xujiafeng.myview.activity.list.PathView
         android:visibility="gone"
         android:id="@+id/path_view"
         android:layout_width="match_parent"

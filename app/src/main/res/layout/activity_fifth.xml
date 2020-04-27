@@ -5,9 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.xuyu.myview.activity.animator.FifthActivity">
+    tools:context="com.xujiafeng.myview.activity.animator.SimpleAnimatorActivity">
 
-    <com.xuyu.myview.activity.animator.CircleButtonMenu
+    <com.xujiafeng.myview.activity.animator.CircleButtonMenu
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -46,12 +46,12 @@
             android:gravity="center"
             android:text="简单动画2"
             android:textColor="#ffffff"/>
-        <com.xuyu.myview.activity.animator.TButton
+        <com.xujiafeng.myview.activity.animator.TButton
             android:id="@+id/button_center"
             android:layout_width="50dp"
             android:layout_height="50dp"
             app:press="@color/colorPrimary"
             app:unpress="@color/colorPrimaryDark"/>
-    </com.xuyu.myview.activity.animator.CircleButtonMenu>
+    </com.xujiafeng.myview.activity.animator.CircleButtonMenu>
 
 </LinearLayout>

@@ -5,8 +5,8 @@
     android:id="@+id/activity_sixth"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.ferris_wheel.SixthActivity">
-    <com.xuyu.myview.activity.ferris_wheel.FerrisWheelLayout
+    tools:context=".activity.ferris_wheel.FerrisWheelActivity">
+    <com.xujiafeng.myview.activity.ferris_wheel.FerrisWheelLayout
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:layout_centerInParent="true">
@@ -34,5 +34,5 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@mipmap/f"/>
-    </com.xuyu.myview.activity.ferris_wheel.FerrisWheelLayout>
+    </com.xujiafeng.myview.activity.ferris_wheel.FerrisWheelLayout>
 </RelativeLayout>

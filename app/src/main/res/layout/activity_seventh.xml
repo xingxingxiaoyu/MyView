@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activity.bezier_curve.SeventhActivity">
+    tools:context=".activity.bezier_curve.BezierCurverActivity">
     <Button
         android:id="@+id/button1"
         android:onClick="onClick"

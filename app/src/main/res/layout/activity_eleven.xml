@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.star.ElevenActivity">
+    tools:context=".activity.star.StarActivity">
 
-    <com.xuyu.myview.activity.star.StarView
+    <com.xujiafeng.myview.activity.star.StarView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="100dp" />

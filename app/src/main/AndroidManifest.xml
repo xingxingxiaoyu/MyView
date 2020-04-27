@@ -1,42 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.xuyu.myview"
+    package="com.xujiafeng.myview"
     android:versionCode="1"
     android:versionName="1.0.0">
 
     <application
-        android:name=".application.BApplication"
+        android:name="com.xujiafeng.myview.application.BaseApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.list.planb.ListPlanbActivity"></activity>
-        <activity android:name=".activity.list.ListActivity" />
-        <activity android:name=".activity.star.ElevenActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name="com.xujiafeng.myview.activity.bitmap.identify.IdentifyColorActivity"></activity>
+        <activity android:name="com.xujiafeng.myview.activity.list.planb.ListPlanbActivity" />
+        <activity android:name="com.xujiafeng.myview.activity.list.ListActivity" />
+        <activity android:name="com.xujiafeng.myview.activity.star.StarActivity" />
+        <activity android:name="com.xujiafeng.myview.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.automatic_ball.FirstActivity" />
-        <activity android:name=".activity.clock.SecondActivity" />
-        <activity android:name=".activity.identifying_code.ThirdActivity" />
-        <activity android:name=".activity.side_slipe.FourthActivity" />
-        <activity android:name=".activity.animator.person_animator.PersonAnimatorActivity" />
-        <activity android:name=".activity.ferris_wheel.SixthActivity" />
-        <activity android:name=".activity.bezier_curve.my_bezier_line.MyBezierActivity" />
-        <activity android:name=".activity.pay_password.EighthActivity" />
-        <activity android:name=".activity.bitmap.bitmap_edit.BitmapEditActivity" />
-        <activity android:name=".activity.bezier_curve.SeventhActivity" />
-        <activity android:name=".activity.bezier_curve.bezier_show.BezierShowActivity" />
-        <activity android:name=".activity.bezier_curve.path.PathTestActivity" />
-        <activity android:name=".activity.broken_line.TenthActivity" />
-        <activity android:name=".activity.bitmap.NinthActivity" />
-        <activity android:name=".activity.animator.FifthActivity" />
-        <activity android:name=".activity.animator.sinple_animator.SimpleAnimatorActivity" />
+        <activity android:name="com.xujiafeng.myview.activity.automatic_ball.AutoBallActivity" />
+        <activity android:name="com.xujiafeng.myview.activity.clock.ClockActivity" />
+        <activity android:name="com.xujiafeng.myview.activity.identifying_code.CodeActivity" />
+        <activity android:name="com.xujiafeng.myview.activity.side_slipe.SideMenuActivity" />
+        <activity android:name="com.xujiafeng.myview.activity.animator.person_animator.PersonAnimatorActivity" />
+        <activity android:name="com.xujiafeng.myview.activity.ferris_wheel.FerrisWheelActivity" />
+        <activity android:name="com.xujiafeng.myview.activity.bezier_curve.my_bezier_line.MyBezierActivity" />
+        <activity android:name="com.xujiafeng.myview.activity.pay_password.PayPasswordActivity" />
+        <activity android:name="com.xujiafeng.myview.activity.bitmap.bitmap_edit.BitmapEditActivity" />
+        <activity android:name="com.xujiafeng.myview.activity.bezier_curve.BezierCurverActivity" />
+        <activity android:name="com.xujiafeng.myview.activity.bezier_curve.bezier_show.BezierShowActivity" />
+        <activity android:name="com.xujiafeng.myview.activity.bezier_curve.path.PathTestActivity" />
+        <activity android:name="com.xujiafeng.myview.activity.broken_line.BrokenLineActivity" />
+        <activity android:name="com.xujiafeng.myview.activity.bitmap.BitmapActivity" />
+        <activity android:name="com.xujiafeng.myview.activity.animator.SimpleAnimatorActivity" />
+        <activity android:name="com.xujiafeng.myview.activity.animator.sinple_animator.SimpleAnimatorActivity" />
     </application>
 
 </manifest>

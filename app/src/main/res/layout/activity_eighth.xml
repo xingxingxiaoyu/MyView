@@ -6,10 +6,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activity.pay_password.EighthActivity">
+    tools:context=".activity.pay_password.PayPasswordActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_show_dialog"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="show"/>

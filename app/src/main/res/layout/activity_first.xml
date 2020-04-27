@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.automatic_ball.FirstActivity">
-    <com.xuyu.myview.activity.automatic_ball.AutomaticBallView
+    tools:context=".activity.automatic_ball.AutoBallActivity">
+    <com.xujiafeng.myview.activity.automatic_ball.AutomaticBallView
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".activity.bezier_curve.path.PathTestActivity">
 
-    <com.xuyu.myview.activity.bezier_curve.path.PathTestView
+    <com.xujiafeng.myview.activity.bezier_curve.path.PathTestView
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 </RelativeLayout>

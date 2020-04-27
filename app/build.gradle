@@ -4,7 +4,7 @@ android {
     compileSdkVersion 29
 
     defaultConfig {
-        applicationId "com.xuyu.myview"
+        applicationId "com.xujiafeng.myview"
         minSdkVersion 14
         targetSdkVersion 29
         versionCode 1

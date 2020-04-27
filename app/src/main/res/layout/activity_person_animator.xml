@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity.animator.person_animator.PersonAnimatorActivity">
-    <com.xuyu.myview.activity.animator.person_animator.AnimatorLayout
+    <com.xujiafeng.myview.activity.animator.person_animator.AnimatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".activity.bezier_curve.bezier_show.BezierShowActivity">
 
-    <com.xuyu.myview.activity.bezier_curve.bezier_show.BezierShowView
+    <com.xujiafeng.myview.activity.bezier_curve.bezier_show.BezierShowView
         android:id="@+id/bezier_show_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
