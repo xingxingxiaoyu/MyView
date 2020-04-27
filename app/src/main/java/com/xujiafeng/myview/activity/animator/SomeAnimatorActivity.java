@@ -9,7 +9,7 @@ import com.xujiafeng.myview.R;
 import com.xujiafeng.myview.activity.animator.person_animator.PersonAnimatorActivity;
 import com.xujiafeng.myview.activity.animator.sinple_animator.SimpleAnimatorActivity;
 
-public class SimpleAnimatorActivity extends AppCompatActivity
+public class SomeAnimatorActivity extends AppCompatActivity
 {
 
     @Override

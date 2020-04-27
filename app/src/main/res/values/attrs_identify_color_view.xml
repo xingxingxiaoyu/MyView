@@ -1,0 +1,5 @@
+<resources>
+    <declare-styleable name="IdentifyColorView">
+        <attr name="level" format="integer" />
+    </declare-styleable>
+</resources>

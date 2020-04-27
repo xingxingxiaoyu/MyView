@@ -5,7 +5,7 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 
-import com.xujiafeng.myview.activity.animator.SimpleAnimatorActivity;
+import com.xujiafeng.myview.activity.animator.SomeAnimatorActivity;
 import com.xujiafeng.myview.activity.automatic_ball.AutoBallActivity;
 import com.xujiafeng.myview.activity.bezier_curve.BezierCurverActivity;
 import com.xujiafeng.myview.activity.bitmap.BitmapActivity;
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 intent.setClass(this, SideMenuActivity.class);
                 break;
             case R.id.button_animator:
-                intent.setClass(this, SimpleAnimatorActivity.class);
+                intent.setClass(this, SomeAnimatorActivity.class);
                 break;
             case R.id.button_ferris_wheel:
                 intent.setClass(this, FerrisWheelActivity.class);

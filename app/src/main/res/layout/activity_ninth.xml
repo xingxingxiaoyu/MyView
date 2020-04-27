@@ -13,4 +13,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="编辑图片"/>
+
+    <Button
+        android:onClick="onClick"
+        android:id="@+id/button_identify_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="识别颜色小游戏"/>
 </LinearLayout>

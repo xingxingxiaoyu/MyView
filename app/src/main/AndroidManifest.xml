@@ -36,7 +36,7 @@
         <activity android:name="com.xujiafeng.myview.activity.bezier_curve.path.PathTestActivity" />
         <activity android:name="com.xujiafeng.myview.activity.broken_line.BrokenLineActivity" />
         <activity android:name="com.xujiafeng.myview.activity.bitmap.BitmapActivity" />
-        <activity android:name="com.xujiafeng.myview.activity.animator.SimpleAnimatorActivity" />
+        <activity android:name="com.xujiafeng.myview.activity.animator.SomeAnimatorActivity" />
         <activity android:name="com.xujiafeng.myview.activity.animator.sinple_animator.SimpleAnimatorActivity" />
     </application>
 
