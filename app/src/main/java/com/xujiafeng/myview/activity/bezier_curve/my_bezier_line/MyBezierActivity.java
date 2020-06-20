@@ -2,14 +2,14 @@ package com.xujiafeng.myview.activity.bezier_curve.my_bezier_line;
 
 import android.graphics.Color;
 import android.graphics.Point;
-import androidx.appcompat.app.AppCompatActivity;
+import com.xujiafeng.myview.base.BaseActivity;
 import android.os.Bundle;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 
 import com.xujiafeng.myview.R;
 
-public class MyBezierActivity extends AppCompatActivity
+public class MyBezierActivity extends BaseActivity
 {
 
     @Override

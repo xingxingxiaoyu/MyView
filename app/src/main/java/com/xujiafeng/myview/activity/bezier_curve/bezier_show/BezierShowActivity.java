@@ -1,12 +1,12 @@
 package com.xujiafeng.myview.activity.bezier_curve.bezier_show;
 
-import androidx.appcompat.app.AppCompatActivity;
+import com.xujiafeng.myview.base.BaseActivity;
 import android.os.Bundle;
 import android.view.View;
 
 import com.xujiafeng.myview.R;
 
-public class BezierShowActivity extends AppCompatActivity
+public class BezierShowActivity extends BaseActivity
 {
 
     private BezierShowView mBezierShowView;

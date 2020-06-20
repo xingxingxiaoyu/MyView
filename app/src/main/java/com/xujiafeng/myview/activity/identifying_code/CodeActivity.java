@@ -1,11 +1,11 @@
 package com.xujiafeng.myview.activity.identifying_code;
 
-import androidx.appcompat.app.AppCompatActivity;
+import com.xujiafeng.myview.base.BaseActivity;
 import android.os.Bundle;
 
 import com.xujiafeng.myview.R;
 
-public class CodeActivity extends AppCompatActivity
+public class CodeActivity extends BaseActivity
 {
 
     @Override

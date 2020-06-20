@@ -1,7 +1,7 @@
 package com.xujiafeng.myview.activity.list;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
+import com.xujiafeng.myview.base.BaseActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -16,7 +16,7 @@ import android.view.View;
 import com.xujiafeng.myview.R;
 import com.xujiafeng.myview.activity.list.planb.ListPlanbActivity;
 
-public class ListActivity extends AppCompatActivity {
+public class ListActivity extends BaseActivity {
     public static final String TAG = "ListActivity";
     private PathView currentPathView;
 

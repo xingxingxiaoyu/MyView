@@ -1,6 +1,6 @@
 package com.xujiafeng.myview.activity.bitmap.identify;
 
-import androidx.appcompat.app.AppCompatActivity;
+import com.xujiafeng.myview.base.BaseActivity;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 import com.xujiafeng.myview.R;
 
-public class IdentifyColorActivity extends AppCompatActivity {
+public class IdentifyColorActivity extends BaseActivity {
 
     private int level = 1;
 
@@ -35,7 +35,7 @@ public class IdentifyColorActivity extends AppCompatActivity {
                     } else if (level == 10) {
                         Toast.makeText(IdentifyColorActivity.this, "还可以！", Toast.LENGTH_SHORT).show();
                     } else if (level == 15) {
-                        Toast.makeText(IdentifyColorActivity.this, "不厉害啊！", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(IdentifyColorActivity.this, "好厉害啊！", Toast.LENGTH_SHORT).show();
                     } else if (level == 20) {
                         Toast.makeText(IdentifyColorActivity.this, "加油，突破极限！", Toast.LENGTH_SHORT).show();
                     } else if (level == 30) {

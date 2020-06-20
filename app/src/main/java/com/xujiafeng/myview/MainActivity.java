@@ -2,7 +2,7 @@ package com.xujiafeng.myview;
 
 import android.content.Intent;
 import android.os.Bundle;
-import androidx.appcompat.app.AppCompatActivity;
+import com.xujiafeng.myview.base.BaseActivity;
 import android.view.View;
 
 import com.xujiafeng.myview.activity.animator.SomeAnimatorActivity;
@@ -17,12 +17,13 @@ import com.xujiafeng.myview.activity.list.ListActivity;
 import com.xujiafeng.myview.activity.pay_password.PayPasswordActivity;
 import com.xujiafeng.myview.activity.side_slipe.SideMenuActivity;
 import com.xujiafeng.myview.activity.star.StarActivity;
+import com.xujiafeng.myview.base.BaseActivity;
 
 /**
  * Created by Administrator on 2017/5/19.
  */
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends BaseActivity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

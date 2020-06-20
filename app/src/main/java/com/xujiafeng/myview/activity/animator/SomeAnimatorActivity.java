@@ -1,7 +1,7 @@
 package com.xujiafeng.myview.activity.animator;
 
 import android.content.Intent;
-import androidx.appcompat.app.AppCompatActivity;
+import com.xujiafeng.myview.base.BaseActivity;
 import android.os.Bundle;
 import android.view.View;
 
@@ -9,7 +9,7 @@ import com.xujiafeng.myview.R;
 import com.xujiafeng.myview.activity.animator.person_animator.PersonAnimatorActivity;
 import com.xujiafeng.myview.activity.animator.sinple_animator.SimpleAnimatorActivity;
 
-public class SomeAnimatorActivity extends AppCompatActivity
+public class SomeAnimatorActivity extends BaseActivity
 {
 
     @Override

@@ -1,7 +1,7 @@
 package com.xujiafeng.myview.activity.bezier_curve;
 
 import android.content.Intent;
-import androidx.appcompat.app.AppCompatActivity;
+import com.xujiafeng.myview.base.BaseActivity;
 import android.os.Bundle;
 import android.view.View;
 
@@ -10,7 +10,7 @@ import com.xujiafeng.myview.activity.bezier_curve.bezier_show.BezierShowActivity
 import com.xujiafeng.myview.activity.bezier_curve.my_bezier_line.MyBezierActivity;
 import com.xujiafeng.myview.activity.bezier_curve.path.PathTestActivity;
 
-public class BezierCurverActivity extends AppCompatActivity
+public class BezierCurverActivity extends BaseActivity
 {
 
     @Override

@@ -1,11 +1,11 @@
 package com.xujiafeng.myview.activity.animator.person_animator;
 
-import androidx.appcompat.app.AppCompatActivity;
+import com.xujiafeng.myview.base.BaseActivity;
 import android.os.Bundle;
 
 import com.xujiafeng.myview.R;
 
-public class PersonAnimatorActivity extends AppCompatActivity
+public class PersonAnimatorActivity extends BaseActivity
 {
 
     @Override

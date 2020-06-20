@@ -1,11 +1,11 @@
 package com.xujiafeng.myview.activity.ferris_wheel;
 
-import androidx.appcompat.app.AppCompatActivity;
+import com.xujiafeng.myview.base.BaseActivity;
 import android.os.Bundle;
 
 import com.xujiafeng.myview.R;
 
-public class FerrisWheelActivity extends AppCompatActivity
+public class FerrisWheelActivity extends BaseActivity
 {
 
     @Override

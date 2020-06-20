@@ -2,14 +2,14 @@ package com.xujiafeng.myview.activity.bitmap.bitmap_edit;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import androidx.appcompat.app.AppCompatActivity;
+import com.xujiafeng.myview.base.BaseActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.SeekBar;
 
 import com.xujiafeng.myview.R;
 
-public class BitmapEditActivity extends AppCompatActivity implements SeekBar.OnSeekBarChangeListener
+public class BitmapEditActivity extends BaseActivity implements SeekBar.OnSeekBarChangeListener
 {
 
     private SeekBar mSeekBar_1;

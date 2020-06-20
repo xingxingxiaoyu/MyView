@@ -1,12 +1,13 @@
 package com.xujiafeng.myview.activity.animator.sinple_animator;
 
-import androidx.appcompat.app.AppCompatActivity;
+import com.xujiafeng.myview.base.BaseActivity;
 import android.os.Bundle;
 import android.view.View;
 
 import com.xujiafeng.myview.R;
+import com.xujiafeng.myview.base.BaseActivity;
 
-public class SimpleAnimatorActivity extends AppCompatActivity
+public class SimpleAnimatorActivity extends BaseActivity
 {
 
     private SimpleAnimatorView mSimpleAnimatorView;

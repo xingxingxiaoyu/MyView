@@ -1,11 +1,11 @@
 package com.xujiafeng.myview.activity.broken_line;
 
-import androidx.appcompat.app.AppCompatActivity;
+import com.xujiafeng.myview.base.BaseActivity;
 import android.os.Bundle;
 
 import com.xujiafeng.myview.R;
 
-public class BrokenLineActivity extends AppCompatActivity
+public class BrokenLineActivity extends BaseActivity
 {
 
     @Override

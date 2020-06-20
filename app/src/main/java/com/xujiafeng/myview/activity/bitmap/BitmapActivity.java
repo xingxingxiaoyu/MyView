@@ -1,7 +1,7 @@
 package com.xujiafeng.myview.activity.bitmap;
 
 import android.content.Intent;
-import androidx.appcompat.app.AppCompatActivity;
+import com.xujiafeng.myview.base.BaseActivity;
 import android.os.Bundle;
 import android.view.View;
 
@@ -9,7 +9,7 @@ import com.xujiafeng.myview.R;
 import com.xujiafeng.myview.activity.bitmap.bitmap_edit.BitmapEditActivity;
 import com.xujiafeng.myview.activity.bitmap.identify.IdentifyColorActivity;
 
-public class BitmapActivity extends AppCompatActivity
+public class BitmapActivity extends BaseActivity
 {
 
     @Override

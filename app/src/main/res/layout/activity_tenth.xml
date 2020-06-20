@@ -1,15 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity.broken_line.BrokenLineActivity">
 
-    <com.xujiafeng.myview.activity.broken_line.BrokenLineView
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:main_line_color="#000000"
-        app:mode="broken_line_with_point"/>
+        android:layout_margin="20dp"
+        android:background="#ff0000">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:background="#ff0000">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:background="#ff0000">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20dp"
+                    android:background="#ff0000">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="20dp"
+                        android:background="#ff0000">
+
+                    </FrameLayout>
+
+                </FrameLayout>
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <!--    <com.xujiafeng.myview.activity.broken_line.BrokenLineView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        app:main_line_color="#000000"-->
+    <!--        app:mode="broken_line_with_point"/>-->
 </FrameLayout>
