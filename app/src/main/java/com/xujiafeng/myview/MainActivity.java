@@ -3,6 +3,11 @@ package com.xujiafeng.myview;
 import android.content.Intent;
 import android.os.Bundle;
 import com.xujiafeng.myview.base.BaseActivity;
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Looper;
+import android.util.Log;
+import android.util.Printer;
 import android.view.View;
 
 import com.xujiafeng.myview.activity.animator.SomeAnimatorActivity;
@@ -22,14 +27,21 @@ import com.xujiafeng.myview.base.BaseActivity;
 /**
  * Created by Administrator on 2017/5/19.
  */
-
-public class MainActivity extends BaseActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+    public static final String TAG = "MainActivity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Looper.getMainLooper().setMessageLogging(new Printer() {
+            @Override
+            public void println(String x) {
+                Log.d(TAG, "println: "+x);
+            }
+        });
     }
 
+    @Override
     public void onClick(View v) {
         Intent intent = new Intent();
         switch (v.getId()) {
