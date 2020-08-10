@@ -2,6 +2,8 @@ package com.xujiafeng.myview;
 
 import android.content.Intent;
 import android.os.Bundle;
+
+import com.xujiafeng.myview.activity.ball.BallActivity;
 import com.xujiafeng.myview.base.BaseActivity;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -80,6 +82,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.button_list:
                 intent.setClass(this, ListActivity.class);
+                break;
+
+            case R.id.button_ball:
+                intent.setClass(this, BallActivity.class);
                 break;
         }
         startActivity(intent);

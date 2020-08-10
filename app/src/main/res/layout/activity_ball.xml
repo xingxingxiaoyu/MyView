@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ball.BallActivity">
+
+    <Button
+        android:id="@+id/button_add_ball"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加球"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/layout_friction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_add_ball">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="摩擦力系数：" />
+
+        <EditText
+            android:id="@+id/et_friction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_wind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/layout_friction"
+        app:layout_constraintTop_toBottomOf="@+id/button_add_ball">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="风力：" />
+
+        <EditText
+            android:id="@+id/et_wind_x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="x"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/et_wind_y"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="y"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_elastic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_friction">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="弹力系数：" />
+
+        <EditText
+            android:id="@+id/et_elastic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_move"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="动"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_elastic" />
+
+    <Button
+        android:id="@+id/button_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="停"
+        app:layout_constraintStart_toEndOf="@id/button_move"
+        app:layout_constraintTop_toBottomOf="@+id/layout_elastic" />
+
+    <com.xujiafeng.myview.activity.ball.BallAreView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_move" />
+</androidx.constraintlayout.widget.ConstraintLayout>
